@@ -1,0 +1,133 @@
+body {
+  background-color: slategray;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+button {
+  height: 30px;
+  margin: 10px 0 10px 0;
+  background-color: #ffb3d1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: blanchedalmond;
+  transition: 0.3s;
+}
+
+#phase2 button,
+#reset button {
+  height: 48px;
+  width: 240px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#reset button {
+  background-color: lightcoral;
+  border: 4px solid black;
+  border-radius: 14px;
+  margin-right: 12px;
+}
+
+#reset button:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+.container {
+  border: 4px solid black;
+  border-radius: 15px;
+  padding: 10px 10px 15px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: white;
+}
+
+#original-arrays,
+#mergeRes,
+#orderRes {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  height: 20px;
+  text-align: center;
+  box-shadow: inset -4px -4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#brain {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #phase2 button {
+    height: 30px;
+    font-weight: normal;
+  }
+
+  .reset-btn {
+  justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #brain {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+  }
+}

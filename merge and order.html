@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge & Order</title>
+    <link rel="stylesheet" href="./css/mystyle.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Merge Arrays and Order</h1>
+    </div>
+    <div id="brain" class="hide">
+      <img
+        src="https://media3.giphy.com/media/MB75OzWrpUMOWfBHg0/giphy.gif"
+        alt=""
+      />
+    </div>
+    <section id="phase1">
+      <div class="container flex">
+        <div class="flex column center">
+          <span class="heading">These are the original arrays</span>
+          <span id="original-arrays"></span>
+        </div>
+        <button onclick="showRes('merge')">
+          Merge these arrays into a single array
+        </button>
+        <div class="flex column center">
+          <span class="heading">This is the Result</span>
+          <span id="mergeRes"></span>
+        </div>
+      </div>
+    </section>
+    <section id="phase2" class="hide">
+      <div class="container flex">
+        <button onclick="showRes('order')">Order the items in the array</button>
+        <div class="flex column center">
+          <span class="heading">This is the Result</span>
+          <span id="orderRes"></span>
+        </div>
+      </div>
+    </section>
+    <section id="reset" class="hide">
+      <div class="reset-btn flex end">
+        <button onclick="reset()">reset</button>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
